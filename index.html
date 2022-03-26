@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trey | portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/f95011a121.js" crossorigin="anonymous"></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <!-- main CSS -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+
+    <!-- Theme Handler Script -->
+    <script src="./src/scripts/themeHandler.js"></script>
+
+    <!-- main script -->
+    <script src="./src/scripts/main.js"></script>
+
+</head>
+
+
+<body onload="onLoad()" class="lightTheme">
+
+    <!-- loader -->
+    <div id="loader" class="loader">
+        <div class="loader-inner">
+            <div class="loader-circle"></div>
+        </div>
+    </div>
+    <!-- end loader -->
+
+    <!-- navigation section -->
+    <nav id="navbar" class="py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col my-3 mx-lg-4">
+                    <i data-theme="lightTheme" onclick="onClick()" id="navbar-bulb"
+                        class=" px-sm-3 bi bi-lightbulb-fill"></i>
+                    <a class="navbar-link" href="https://www.github.com/trnitu" target="_blank">trey turner</a>
+                    <!-- icons -->
+                </div>
+                <div class="col my-3 mx-lg-4 navbar-col-right">
+                    <a class="navbar-link mx-2" href="#work">work</a>
+                    <a class="navbar-link mx-2" href="#experience">experience</a>
+                    <a class="navbar-link mx-2" href="#skills">skills</a>
+                    <a class="navbar-link mx-2" href="#contact">contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation section -->
+
+    <!-- introduction section section -->
+    <section id="introduction" class="px-3 px-md-5 pb-lg-5 py-4 introduction">
+        <div class="container text-center">
+            <div class="row">
+                <div class="my-3 col d-flex inline-block text-center justify-content-center">
+                    <h4 class="introduction-name mx-2"></h4>
+                    <span id="introduction-wave" class="introduction-wave">👋</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <h1 class="introduction-header">Designer, Developer, and Student</h1>
+                    <!-- <div class="introduction-subtitles">
+                        <h1 class="d-none d-md-block" id="introduction-developer">Developer</h1>
+                        <h1 class="d-none d-md-block" id="introduction-designer">Designer</h1>
+                        <h1 class="d-none d-md-block" id="introduction-student>Student</h1>
+                    </div> -->
+                </div>
+                <div class="d-flex py-2 px-lg-5 p-sm-none justify-content-center align-items-center text-center">
+                    <p class="fs-6 introduction-pitch">Hello! I am currently a 4th year student studying Computer
+                        Science at the University of Nebraska-Lincoln. Here in this website, you can find my projects,
+                        work experience, skills, and more about who I am! If you are interested in learning more than
+                        this page has to offer, feel to contact me!</p>
+                </div>
+                <!-- typing header text animation -->
+                <script src="./src/scripts/headerTypeAnimation.js"></script>
+                </h1>
+            </div>
+            <!-- contact button goes here -->
+            <a href="mailto:tturner@huskers.unl.edu" class="introduction-btn">Get in Touch!</a>
+        </div>
+    </section>
+    <!-- end introduction section -->
+
+    <!-- work section -->
+    <section id="work" class="section">
+        <div class="container">
+            <h4 class="work-header text-center">My Work</h4>
+            <div class="row align-items-center justify-content-center">
+
+                <!-- mock university website -->
+                <div onclick="window.open('https\:\/\/github.com/TrNiTu/StudentNewsPage','mywindow')"
+                    class="col-md-4 m-2 work-card">
+                    <img class="work-card-image" src="./src/images/work-university.png" alt="">
+                    <div class="work-card-container">
+                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
+                            Mock University Website</h4>
+                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">This is a mock university website that
+                            helped
+                            me familiarize myself with UI layouts and Bootstrap.</p>
+                        <div class="work-card-brands mb-2">
+                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #f0f0f0 !important"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- wordle clone -->
+                <div onclick="window.open('https\:\/\/github.com/TrNiTu/wordleclone','mywindow')"
+                    class="col-md-4 m-2 work-card">
+                    <img class="work-card-image" src="./src/images/work-wclone.png" alt="">
+                    <div class="work-card-container">
+                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
+                            Wordle Game Clone</h4>
+                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">A remade version of the NY Times's
+                            infamous daily game, Wordle, using vanilla JS.</p>
+                        <div class="work-card-brands mb-2">
+                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-js" style="color: #f0f0f0 !important"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lifting Session Tracker -->
+                <div onclick="window.open('https\:\/\/github.com/TrNiTu/LiftingSessionTracker','mywindow')"
+                    class="col-md-4 m-2 work-card">
+                    <img class="work-card-image" src="./src/images/work-lifting.png" alt="">
+                    <div class="work-card-container">
+                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
+                            Lifting Session Tracker</h4>
+                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">Track your workouts with this application
+                            that uses Firebase API as storage (This is still a work in progress!)</p>
+                        <div class="work-card-brands mb-2">
+                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-js" style="color: #f0f0f0 !important"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- spotify api -->
+                <div onclick="window.open('https\:\/\/github.com/TrNiTu/SpotifyAPI','mywindow')"
+                    class="col-md-4 m-2 work-card">
+                    <img class="work-card-image" src="./src/images/work-spotify.png" alt="">
+                    <div class="work-card-container">
+                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
+                            Spotify Playlist Generator</h4>
+                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">Generate a playlist based off of text
+                            that you input through Spotify using their API! (This is still a work in progress!)</p>
+                        <div class="work-card-brands mb-2">
+                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-js" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-spotify" style="color: #f0f0f0 !important"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- gym landing page -->
+                <div onclick="window.open('https\:\/\/github.com/TrNiTu/GymLandingPage','mywindow')"
+                    class="col-md-4 m-2 work-card">
+                    <img class="work-card-image" src="./src/images/work-gym.png" alt="">
+                    <div class="work-card-container">
+                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
+                            Mock Landing Page</h4>
+                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">This is a mock landing page using mostly
+                            Bootstrap for the styling and layout with a MapBox API usage.</p>
+                        <div class="work-card-brands mb-2">
+                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #f0f0f0 !important"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- current portfolio -->
+                <!-- NEED TO CREATE REPO FOR THIS -->
+                <div onclick="window.open('https\:\/\/github.com/TrNiTu/Portfolio2022','mywindow')"
+                    class="col-md-4 m-2 work-card">
+                    <img class="work-card-image" src="./src/images/work-portfolio.png" alt="">
+                    <div class="work-card-container">
+                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
+                            2022 Portfolio Website</h4>
+                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">This website is on my GitHub, Check it
+                            out if you are curious about how I created this!</p>
+                        <div class="work-card-brands mb-2">
+                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-js" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #f0f0f0 !important"></i>
+                            <i class="fa-brands fa-square-font-awesome"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end work section -->
+
+    <!-- experience section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h4 class="experience-header text-center">My Experiences</h4>
+        </div>
+    </section>
+
+
+    <!-- <section id="about" class="py-5">
+    <div class="container d-flex about-container">
+        <div class="row">
+            <h2 class="about-header">About Me</h1>
+                <div class="col">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos corrupti voluptate est impedit
+                        illo obcaecati nesciunt dolor accusantium dicta dolore.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos corrupti voluptate est impedit
+                        illo obcaecati nesciunt dolor accusantium dicta dolore.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos corrupti voluptate est impedit
+                        illo obcaecati nesciunt dolor accusantium dicta dolore.</p>
+                </div>
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatem aliquam assumenda ea
+                        velit
+                        ducimus, sit error. Possimus, nulla nisi!</p>
+                </div>
+        </div>
+    </div>
+</section> -->
+    <!-- end experience section -->
+
+
+    <!-- skills section -->
+
+    <!-- footer/social media section -->
+
+</body>
+
+</html>
