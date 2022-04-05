@@ -33,6 +33,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
         rel="stylesheet">
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <!-- main CSS -->
     <link rel="stylesheet" href="./src/styles/main.css">
 
@@ -86,11 +90,6 @@
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
                     <h1 class="introduction-header">Designer, Developer, and Student</h1>
-                    <!-- <div class="introduction-subtitles">
-                        <h1 class="d-none d-md-block" id="introduction-developer">Developer</h1>
-                        <h1 class="d-none d-md-block" id="introduction-designer">Designer</h1>
-                        <h1 class="d-none d-md-block" id="introduction-student>Student</h1>
-                    </div> -->
                 </div>
                 <div class="d-flex py-2 px-lg-5 p-sm-none justify-content-center align-items-center text-center">
                     <p class="fs-6 introduction-pitch">Hello! I am currently a 4th year student studying Computer
@@ -98,8 +97,6 @@
                         work experience, skills, and more about who I am! If you are interested in learning more than
                         this page has to offer, feel to contact me!</p>
                 </div>
-                <!-- typing header text animation -->
-                <script src="./src/scripts/headerTypeAnimation.js"></script>
                 </h1>
             </div>
             <!-- contact button goes here -->
@@ -111,12 +108,12 @@
     <!-- work section -->
     <section id="work">
         <div class="container">
-            <h4 class="work-header text-center">My Work</h4>
+            <h4 class="hidden work-header text-center">My Work</h4>
             <div class="row align-items-center justify-content-center">
 
                 <!-- mock university website -->
                 <div onclick="window.open('https\:\/\/github.com/TrNiTu/StudentNewsPage','mywindow')"
-                    class="col-md-4 m-2 work-card">
+                    class="hidden col-md-4 m-2 work-card">
                     <img class="work-card-image" src="./src/images/work-university.png" alt="">
                     <div class="work-card-container">
                         <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
@@ -134,7 +131,7 @@
 
                 <!-- wordle clone -->
                 <div onclick="window.open('https\:\/\/github.com/TrNiTu/wordleclone','mywindow')"
-                    class="col-md-4 m-2 work-card">
+                    class="hidden col-md-4 m-2 work-card">
                     <img class="work-card-image" src="./src/images/work-wclone.png" alt="">
                     <div class="work-card-container">
                         <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
@@ -151,7 +148,7 @@
 
                 <!-- Lifting Session Tracker -->
                 <div onclick="window.open('https\:\/\/github.com/TrNiTu/LiftingSessionTracker','mywindow')"
-                    class="col-md-4 m-2 work-card">
+                    class="hidden col-md-4 m-2 work-card">
                     <img class="work-card-image" src="./src/images/work-lifting.png" alt="">
                     <div class="work-card-container">
                         <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
@@ -168,7 +165,7 @@
 
                 <!-- spotify api -->
                 <div onclick="window.open('https\:\/\/github.com/TrNiTu/SpotifyAPI','mywindow')"
-                    class="col-md-4 m-2 work-card">
+                    class="hidden col-md-4 m-2 work-card">
                     <img class="work-card-image" src="./src/images/work-spotify.png" alt="">
                     <div class="work-card-container">
                         <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
@@ -186,7 +183,7 @@
 
                 <!-- gym landing page -->
                 <div onclick="window.open('https\:\/\/github.com/TrNiTu/GymLandingPage','mywindow')"
-                    class="col-md-4 m-2 work-card">
+                    class="hidden col-md-4 m-2 work-card">
                     <img class="work-card-image" src="./src/images/work-gym.png" alt="">
                     <div class="work-card-container">
                         <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
@@ -203,7 +200,7 @@
 
                 <!-- current portfolio -->
                 <div onclick="window.open('https\:\/\/github.com/TrNiTu/2022portfolio','mywindow')"
-                    class="col-md-4 m-2 work-card">
+                    class="hidden col-md-4 m-2 work-card">
                     <img class="work-card-image" src="./src/images/work-portfolio.png" alt="">
                     <div class="work-card-container">
                         <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
@@ -229,10 +226,10 @@
     <!-- experience section -->
     <section id="experience" class="section">
         <div class="container">
-            <h4 class="experience-header text-center">My Experiences</h4>
+            <h4 class="hidden experience-header text-center">My Experiences</h4>
 
             <!-- design studio -->
-            <div class="row justify-content-center text-center">
+            <div class="hidden row justify-content-center text-center">
                 <div onclick="window.open('https\:\/\/raikes.unl.edu/design-studio','mywindow')"
                     class="col-xl-6 experience-card"
                     style="background-image: url('./src/images/experiences-studio.png');"></div>
@@ -253,14 +250,17 @@
                 </div>
             </div>
 
+            <hr class="hidden">
+
             <!-- seresl -->
-            <div class="row justify-content-center text-center py-5">
+            <div class="hidden row justify-content-center text-center py-5">
                 <div onclick="window.open('https\:\/\/raikes.unl.edu/design-studio','mywindow')"
                     class="col-xl-6 experience-card"
                     style="background-image: url('./src/images/experiences-seresl.png');"></div>
                 <div class="col-xl-6 experience-caption text-xl-end text-lg -center">
                     <h4 class="experience-caption-header">Undergraduate Research Intern - UNL</h4>
-                    <h5><a class="experience-caption-subheader" href="https://seresl.unl.edu" target="_blank">Software Engineering Research and Empirical Studies Lab
+                    <h5><a class="experience-caption-subheader" href="https://seresl.unl.edu" target="_blank">Software
+                            Engineering Research and Empirical Studies Lab
                         </a></h5><br><br>
                     <p class="experience-caption-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
                         placeat voluptates earum quos quia nisi dolorem corrupti vitae magni sint, velit ullam
@@ -279,11 +279,24 @@
     <!-- end experience section -->
 
     <!-- skills section -->
+    <!-- <section id="skills">
+        <div class="container">
+            <h4 class="hidden skills-header text-center">Skills</h4>
+        </div>
+    </section> -->
+    <!-- end skills section -->
 
     <!-- contact section -->
 
     <!-- footer/social media section -->
 
 </body>
+
+<!-- typing header text animation -->
+<script src="./src/scripts/headerTypeAnimation.js"></script>
+
+<!-- scroll fade animation script -->
+<script src="./src/scripts/scrollFadeAnimation.js"></script>
+
 
 </html>
