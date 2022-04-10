@@ -3,7 +3,7 @@ $(document).ready(function () {
     /* Every time the window is scrolled ... */
     $(window).scroll(function () {
 
-        /* Check the location of each desired element */
+        /* Check the location of each fade-in element */
         $('.hidden').each(function () {
 
             var bottom_of_object = $(this).position().top + $(this).height();

@@ -124,6 +124,10 @@ body {
     transition: 0.15s ease-out;
 }
 
+.navbar-link {
+    color: var(--color-opposite) !important;
+}
+
 .bi-lightbulb-fill {
     color: var(--color-bulb) !important;
 }
@@ -169,31 +173,7 @@ body {
 .introduction-header {
     font-size: 3rem;
     font-weight: 1000;
-}
-
-#introduction-developer,
-#introduction-designer,
-#introduction-student {
-    box-sizing: border-box;
-    font-weight: 1000;
-    font-size: 3rem;
-}
-
-#introduction-developer {
-    animation: subtitle-slide 5s linear infinite, subtitle-visibility 0s 1.2s forwards;
-    animation-delay: 1.2s;
-    visibility: hidden;
-}
-
-#introduction-designer,
-#introduction-student {
-    animation: subtitle-visibility 0s 1.2s forwards;
-    visibility: hidden;
-}
-
-.introduction-subtitles {
-    height: 3rem;
-    overflow: hidden;
+    animation: fadeIn 1.3s ease-in-out;
 }
 
 .introduction-pitch {
@@ -344,6 +324,7 @@ body {
 }
 
 .experience-header {
+    color: var(--color-opposite);
     font-weight: 1000;
     font-size: 2.5rem;
     padding-bottom: 1rem;
@@ -358,6 +339,12 @@ body {
     cursor: pointer;
     border: none;
     margin: 0rem 2rem 3rem 2rem;
+    transition: 0.3s ease-out;
+}
+
+.experience-card:hover {
+    transform: scale(105%);
+    transition: 0.3s ease-in;
 }
 
 .experience-caption-header {
@@ -384,6 +371,88 @@ body {
 
 .experience-caption-desc {
     font-size: 1rem;
+}
+
+.fa-calendar-range {
+    font-size: 1rem;
+    color: var(--color-opposite) !important;
+}
+
+.experience-date {
+    font-size: 0.85rem;
+    color: var(--color-opposite);
+    opacity: 0.75;
+}
+
+.experience-break {
+    color: var(--color-opposite);
+}
+
+/* skills styles */
+.skills-header {
+    color: var(--color-opposite);
+    font-weight: 1000;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.skills-subheader {
+    color: var(--color-opposite);
+    font-weight: 800;
+    font-size: 1.75rem;
+}
+
+.skills-language-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-icon-container {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-desc-container {
+    /* text-align: center; */
+}
+
+.skills-card {
+    text-align: center;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-icon {
+    color: var(--color-opposite);
+    font-size: 2.5rem !important;
+    transition: 0.15s ease-out;
+    text-align: center;
+}
+
+.skills-icon:hover {
+    transform: scale(110%);
+    transition: 0.15s ease-in;
+}
+
+.skills-icon p {
+    color: var(--color-opposite);
+    font-size: 1rem !important;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif !important;
+    padding-top: 5px;
+}
+
+.skills-desc {
+    color: var(--color-opposite);
+    font-weight: 400;
+}
+
+.skills-break {
+    background-color: var(--color-opposite);
 }
 
 /* animations */
@@ -515,5 +584,11 @@ body {
 
     100% {
         opacity: 1
+    }
+}
+
+@keyframes slide {
+    to {
+        right: 0px;
     }
 }
