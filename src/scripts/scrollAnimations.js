@@ -12,7 +12,7 @@ $(document).ready(function () {
             /* If the object is completely visible in the window, fade it it */
             if ($(this).is("hr")) {
                 $(this).animate({ 'opacity': '0.25' }, 500);
-            } else if (bottom_of_window > bottom_of_object) {
+            } else if (bottom_of_window > bottom_of_object/1.25) {
                 $(this).animate({ 'opacity': '1' }, 500);
             }
         });
