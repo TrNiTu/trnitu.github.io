@@ -201,10 +201,6 @@ body {
 }
 
 /* work styles */
-/* #work {
-    animation: fadeIn 1.3s ease-in-out;
-} */
-
 .work-header {
     color: var(--color-opposite);
     font-size: 2.5rem;
@@ -225,7 +221,6 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
-    cursor: pointer;
 }
 
 .work-card:hover {
@@ -315,6 +310,27 @@ body {
 
 .work-card-container {
     position: absolute;
+}
+
+.work-btn {
+    animation: fadeIn 1.3s ease-in-out;
+    background-color: transparent;
+    border: 3px solid var(--color-primary);
+    border-radius: 10px;
+    color: var(--color-primary);
+    padding: 7px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: 0.25s ease-out;
+    font-weight: 400;
+}
+
+.work-btn:hover {
+    border: 3px solid transparent;
+    border-radius: 10px;
+    color: var(--color-opposite) !important;
+    background-color: var(--color-primary) !important;
+    transition: 0.25s ease-in;
 }
 
 /* experience styles */
