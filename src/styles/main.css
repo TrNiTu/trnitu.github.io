@@ -212,6 +212,7 @@ body {
     padding: 1rem 0;
 }
 
+
 .work-card {
     height: 248px;
     width: 400px;
@@ -454,12 +455,58 @@ body {
     transition: 0.15s ease-in;
 }
 
-.skills-icon p {
+.skills-icon-brand {
     color: var(--color-opposite);
     font-size: 1rem !important;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif !important;
     padding-top: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.skills-icon-brand::after {
+    color: var(--color-opposite);
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: 0.25s ease-in-out;
+}
+
+.skills-icon-brand:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list-item {
+    color: var(--color-opposite);
+    font-weight: 800;
+    font-size: 1.15rem;
+    text-decoration: none;
+    transition: 0.25s ease-in;
+}
+
+.skills-list-item:hover {
+    color: var(--color-accent);
+    transition: 0.25s ease-out;
+}
+
+.skills-hide {
+    display: none;
+}
+
+.skills-content {
+
 }
 
 .skills-desc {
@@ -515,6 +562,10 @@ body {
 .contact-container i:hover {
     transform: scale(110%);
     transition: 0.15s ease-in-out;
+}
+
+.fa-github-alt {
+    color: var(--color-opposite);
 }
 
 .fa-instagram {
