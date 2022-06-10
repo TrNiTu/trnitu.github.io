@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./src/images/icon.svg">
+    <link rel="icon" type="image/x-icon" href="./src/assets/images/icon.svg">
     <title>trey | portfolio</title>
 
     <!-- bootstrap CSS -->
@@ -101,12 +101,11 @@
                     <h1 class="introduction-header">Designer, Developer, and Student</h1>
                 </div>
                 <div class="d-flex py-2 px-lg-5 p-sm-none justify-content-center align-items-center text-center">
-                    <p class="fs-6 introduction-pitch">Hello! I am currently a 4th year student studying Computer
-                        Science at the University of Nebraska-Lincoln. I possess a crave-like passion to learn and grow
-                        and in turn is my primary motivation to produce effective, high-quality code. Here in this
-                        website, you can find my projects,
-                        work experience, skills, and more about who I am! If you are interested in learning more than
-                        this page has to offer, feel to contact me!</p>
+                    <p class="fs-6 introduction-pitch">Hello! I am currently a 1st year graduate student studying
+                        Computer Science at the University of Nebraska-Lincoln. I possess a crave-like passion to learn
+                        and grow and in turn is my primary motivation to produce effective, high-quality code. Here in
+                        this website, you can find my projects, work experience, skills, and more about who I am! If you
+                        are interested in learning more than what this page has to offer, feel to contact me!</p>
                 </div>
                 </h1>
             </div>
@@ -258,7 +257,7 @@
             <div class="hidden row justify-content-center text-center py-5">
                 <div onclick="window.open('https\:\/\/raikes.unl.edu/design-studio','mywindow')"
                     class="col-xl-6 experience-card"
-                    style="background-image: url('./src/images/experiences-seresl.png');"></div>
+                    style="background-image: url('./src/assets/images/experiences-seresl.png');"></div>
                 <div class="col-xl-6 experience-caption text-xl-end text-lg-center">
                     <h4 class="experience-caption-header">Undergraduate Research Intern - UNL</h4>
                     <h5><a class="experience-caption-subheader" href="https://seresl.unl.edu" target="_blank">Software
@@ -313,7 +312,7 @@
             <!-- GTA -->
             <div class="hidden row justify-content-center text-center py-5">
                 <div onclick="window.open('https\:\/\/computing.unl.edu','mywindow')" class="col-xl-6 experience-card"
-                    style="background-image: url('./src/images/experiences-computing.png');"></div>
+                    style="background-image: url('./src/assets/images/experiences-computing.png');"></div>
                 <div class="col-xl-6 experience-caption text-xl-end text-lg-center">
                     <h4 class="experience-caption-header">Graduate Teaching Assitant - UNL</h4>
                     <h5><a class="experience-caption-subheader" href="https://computing.unl.edu/"
@@ -399,71 +398,89 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="hidden mb-3 skills-icon-container">
-                    <div style="padding-left: 10rem !important;" class="col-6">
+                <div style="max-width: 80vw; height: 100%;" class="hidden mb-3 skills-icon-container">
+                    <div class="ps-sm-5 col-6">
                         <ul class="hidden skills-list text-left">
-                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-rn')" onmouseout="skillsHideContent('skills-rn')">React Native</a></li>
-                            <li>Java</li>
-                            <li>SQL</li>
-                            <li>GitHub</li>
-                            <li>Adobe Suite</li>
-                            <li>MicroSoft Excel</li>
-                            <li>C</li>
-                            <li>C++</li>
+                            <!-- react native -->
+                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-rn')"
+                                    onmouseout="skillsHideContent('skills-rn')">React Native</a></li>
+
+                            <!-- java -->
+                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-java')"
+                                    onmouseout="skillsHideContent('skills-java')">Java</a></li>
+
+                            <!-- sql -->
+                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-sql')"
+                                    onmouseout="skillsHideContent('skills-sql')">SQL</a></li>
+
+                            <!-- github -->
+                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-ghub')"
+                                    onmouseout="skillsHideContent('skills-ghub')">GitHub</a></li>
+
+                            <!-- adobe suite -->
+                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-adobe')"
+                                    onmouseout="skillsHideContent('skills-adobe')">Adobe Suite</a></li>
+
+                            <!-- excel -->
+                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-excel')"
+                                    onmouseout="skillsHideContent('skills-excel')">Microsoft Excel</a></li>
+
+                            <!-- c -->
+                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-sql')"
+                                    onmouseout="skillsHideContent('skills-sql')">C</a></li>
+
+                            <!-- c++ -->
+                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-sql')"
+                                    onmouseout="skillsHideContent('skills-sql')">C++</a></li>
                         </ul>
                     </div>
-                    <div style="padding-right: 10rem !important;" class="col-6 text-end d-md-flex d-none">
-                        <p id="skills-rn" class="skills-hide skills-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam sequi nostrum autem perferendis nam cumque quidem tempora maiores nesciunt!</p>
-                    </div>
-                    <!-- Java -->
-                    <!-- <i class="skills-icon mx-lg-3 fa-brands fa-java">
-                        <p class="skills-icon-brand">Java</p>
-                    </i> -->
 
-                    <!-- SQL -->
-                    <!-- <i class="skills-icon mx-lg-3 fa-solid fa-database">
-                        <p class="skills-icon-brand">SQL</p>
-                    </i> -->
+                    <div class="col-6 text-end pe-sm-5 d-md-flex d-none">
+                        <!-- react native description -->
+                        <p id="skills-rn" class="skills-hide skills-content">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis aliquam sequi nostrum autem perferendis nam cumque quidem
+                            tempora maiores nesciunt!</p>
 
-                    <!-- GitHub -->
-                    <!-- <i class="skills-icon mx-lg-3 fa-brands fa-github">
-                        <p class="skills-icon-brand">GitHub</p>
-                    </i> -->
+                        <!-- java description -->
+                        <p id="skills-java" class="skills-hide skills-content">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis aliquam sequi nostrum autem perferendis nam cumque quidem
+                            tempora maiores nesciunt!</p>
 
-                    <!-- Creative Cloud -->
-                    <!-- <i class="skills-icon mx-lg-3 fa-solid fa-cloud">
-                        <p class="skills-icon-brand">Creative Cloud</p>
-                    </i> -->
+                        <!-- sql description -->
+                        <p id="skills-sql" class="skills-hide skills-content">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis aliquam sequi nostrum autem perferendis nam cumque quidem
+                            tempora maiores nesciunt!</p>
 
-                    <!-- Excel -->
-                    <!-- <i class="skills-icon mx-lg-3 fa-brands fa-microsoft">
-                        <p class="skills-icon-brand">Microsoft Office</p>
-                    </i> -->
+                        <!-- github description -->
+                        <p id="skills-ghub" class="skills-hide skills-content">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis aliquam sequi nostrum autem perferendis nam cumque quidem
+                            tempora maiores nesciunt!</p>
 
-                    <!-- React Native -->
-                    <!-- <i class="skills-icon mx-lg-3 fa-brands fa-react">
-                        <p class="skills-icon-brand">React Native</p>
-                    </i> -->
+                        <!-- adobe suite description -->
+                        <p id="skills-adobe" class="skills-hide skills-content">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis aliquam sequi nostrum autem perferendis nam cumque quidem
+                            tempora maiores nesciunt!</p>
 
-                    <!-- C -->
-                    <!-- <i class="skills-icon mx-lg-3 fa-solid fa-c">
-                        <p class="skills-icon-brand">Procedural C</p>
-                    </i> -->
+                        <!-- microsoft excel description -->
+                        <p id="skills-excel" class="skills-hide skills-content">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis aliquam sequi nostrum autem perferendis nam cumque quidem
+                            tempora maiores nesciunt!</p>
 
-                    <!-- C++ -->
-                    <!-- <i class="skills-icon mx-lg-3 fa-solid fa-c">
-                        <p class="skills-icon-brand">Procedural C</p>
-                    </i> -->
+                        <!-- c description -->
+                        <p id="skills-c" class="skills-hide skills-content">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis aliquam sequi nostrum autem perferendis nam cumque quidem
+                            tempora maiores nesciunt!</p>
 
-
-                    <!-- C# -->
-
-
-                </div>
+                        <!-- c++ description -->
+                        <p id="skills-cpp" class="skills-hide skills-content">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis aliquam sequi nostrum autem perferendis nam cumque quidem
+                            tempora maiores nesciunt!</p>
+                    </div> <!-- skill descriptions -->
+                </div> <!-- end other skills w/ desc. section -->
 
                 <hr class="hidden skills-break mb-5">
-            </div>
-        </div>
+            </div> <!-- end row-->
+        </div> <!-- container -->
     </section>
 
     <!-- social media section -->
