@@ -512,7 +512,7 @@ body {
     font-weight: 400;
 }
 
-.skills-break {
+.skills-break, .skills-hr {
     background-color: var(--color-opposite);
 }
 
