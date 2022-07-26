@@ -1,7 +1,7 @@
 👋 Hi, I'm Trey! Welcome to my portfolio!
 ============================
 
-Aspiring Front-End Web Developer
+Graduate Student & Web Developer
 --------------------------------
 
 I am currently a first year graduate student pursuing a Masters of Science degree in Computer Science at the University of Nebraska-Lincoln [https://unl.edu](https://unl.edu). This upcoming academic year I will be serving as a graduate teaching assistant, helping not only students but also myself learn how to reach success in their computer science related courses. Producing quality and well-organized and documented code is of the utmost importance to me when working on a project. With that being said, feel free to look around my GitHub repository and contact me with the email address listed below if you have any questions!
