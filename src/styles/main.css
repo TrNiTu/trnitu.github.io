@@ -116,6 +116,7 @@ body {
 
 .navbar-link {
     font-size: 0.85rem !important;
+    transition: 0.25s ease-out;
 }
 
 .navbar-link,
@@ -143,9 +144,8 @@ body {
 }
 
 .navbar-link:hover {
-    border-bottom: 1px solid var(--color-accent);
-    color: var(--color-accent);
-    transition: 0.15s ease-in;
+    transform: scale(110%);
+    transition: 0.25s ease-in;
 }
 
 .navbar-col-right {
