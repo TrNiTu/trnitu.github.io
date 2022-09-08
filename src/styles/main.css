@@ -6,6 +6,7 @@ body.lightTheme {
     --color-bulb: #dccc3f;
     --color-bulbHover: #5c4931;
     --color-link: #bb3f3f;
+    --color-counter: #747474;
 }
 
 body.darkTheme {
@@ -16,6 +17,7 @@ body.darkTheme {
     --color-bulb: #808080;
     --color-bulbHover: #dccc3f;
     --color-link: #bb3f3f;
+    --color-counter: #eeeeee;
 }
 
 body {
@@ -133,14 +135,29 @@ body {
     color: var(--color-opposite) !important;
 }
 
+.navbar-counters {
+    color: var(--color-counter) !important;
+    font-size: 0.65rem;
+    transition: 0.15s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar-counters:hover {
+    border-bottom: 1px solid var(--color-counter) !important;
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+}
+
 .bi-lightbulb-fill {
     color: var(--color-bulb) !important;
+    transition: 0.15s ease-in;
 }
 
 .bi-lightbulb-fill:hover {
     color: var(--color-bulbHover) !important;
     cursor: pointer;
     transition: 0.15s ease-in;
+    transform: scale(110%);
 }
 
 .navbar-link:hover {
