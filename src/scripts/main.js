@@ -1,3 +1,4 @@
+// these counters are very very important to me
 const COUNTERONE = calculateDayDifference(new Date("06/24/2022"));
 const COUNTERTWO = calculateDayDifference(new Date("07/30/2022"));
 
