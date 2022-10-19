@@ -80,7 +80,7 @@
                     <!-- bulb -->
                     <i data-theme="lightTheme" onclick="onClick()" id="navbar-bulb"
                         class=" mx-sm-2 bi bi-lightbulb-fill"></i>
-                        <!-- counters -->
+                    <!-- counters -->
                     <p class="navbar-counters align-self-center d-sm-none d-md-block" data-navbar-counters>## | ##</p>
                 </div>
                 <div class="col mx-lg-4 d-sm-none d-md-flex navbar-col-right">
@@ -463,11 +463,13 @@
     <!-- social media section -->
     <section id="contact">
         <div class="container py-5">
-            <h4 class="hidden contact-header text-center">My Socials and Resume</h4>
+            <h4 class="hidden contact-header text-center">My Contact and Resume</h4>
 
-            <!-- download resume & contact -->
+            <!-- contact mail form -->
+
+            <!-- download resume -->
             <div class="hidden contact-container my-4">
-                <a href="mailto:treyniturner@gmail.com" class="contact-resume-btn">Say Hello!</a>
+                <a data-bs-toggle="modal" data-bs-target="#emailFormModal" class="contact-resume-btn">Say Hello!</a>
                 <a href="./src/assets/files/tturner-resume.docx" target="_blank" class="contact-resume-btn">Download
                     Resume</a>
             </div>
@@ -492,7 +494,47 @@
 
         </div>
     </section>
+
+    <!-- email form modal -->
+    <div class="modal fade" id="emailFormModal" tabindex="-1" aria-labelledby="emailFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="email-form-title modal-title fs-5" id="emailFormModalLabel">Send a Hello!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- email form starts here -->
+                <form action="./src/scripts/mail.php" novalidate class="needs-validation">
+                    <div class="modal-body">
+                        <!-- name -->
+                        <label class="form-label" for="name">Name</label>
+                        <input required class="form-control" type="text" id="name" name="name"
+                            placeholder="Johnny Appleseed">
+
+                        <!-- email -->
+                        <label class="form-label" for="email">Email</label>
+                        <input required class="form-control" type="email" id="email" name="email"
+                            placeholder="johnny123@appleseed.com">
+
+                        <!-- message -->
+                        <label class="form-label" for="message">Message</label>
+                        <textarea required class="form-control" id="message" name="message"
+                            placeholder="Hello! I am reaching out to learn more about you..."
+                            style="height:200px; resize: none;"></textarea>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="submit" id="modalSubmit" class="modal-submit-btn">Submit</button>
+                    </div>
+                </form> <!-- email form ends here -->
+
+            </div>
+        </div>
+    </div>
 </body>
+
+<!-- bootstrap validation script -->
+<script src="./src/scripts/bootstrapValidation.js"></script>
 
 <!-- typing header text animation -->
 <script src="./src/scripts/headerTypeAnimation.js"></script>
