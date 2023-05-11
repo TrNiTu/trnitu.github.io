@@ -1,14 +1,14 @@
 👋 Hi, I'm Trey! Welcome to my portfolio!
 ============================
 
-Graduate Student & Web Developer
+Software Engineer
 --------------------------------
 
-I am currently a first year graduate student pursuing a Masters of Science degree in Computer Science at the University of Nebraska-Lincoln [https://unl.edu]((https://unl.edu)). This upcoming academic year I will be serving as a graduate teaching assistant, helping not only students but also myself learn how to reach success in their computer science related courses. Producing quality and well-organized and documented code is of the utmost importance to me when working on a project. With that being said, feel free to look around my GitHub repository and contact me with the email address listed below if you have any questions!
+I am currently a first year graduate student pursuing a Masters of Science degree in Computer Science at the University of Nebraska-Lincoln [https://unl.edu]((https://unl.edu)), but I am changing course to become a full-time software engineer because I believe that my previous experiences paired with my current qualifications and education have more than prepared me enough to enter the workforce at a full-time capacity. Learning and growing is my passion. Here you can find the numerous ways I explore to extend and expand my growth and career in the software engineering field.
 
 * 🌍  I am based in Lincoln, NE, United States
 * 🖥️  See my portfolio at [https://trnitu.github.io/](http://trnitu.github.io)
-* ✉️  You can contact me at [tturner@huskers.unl.edu](mailto:tturner@huskers.unl.edu)
+* ✉️  You can contact me at [treyniturner@gmail.com](mailto:treyniturner@gmail.com)
 * 🧠  I am currently learning the MERN tools for full-stack web development
 
 ### Skills
