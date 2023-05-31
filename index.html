@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./src/assets/images/icon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./src/assets/images/icon.png" />
     <title>trey | portfolio</title>
 
     <!-- bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
     <!-- bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- bootstrap JS bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
 
     <!-- fontawesome Icons -->
-    <script src="https://kit.fontawesome.com/f95011a121.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f95011a121.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- main CSS -->
-    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/main.css" />
 
     <!-- theme handler Script -->
     <script src="./src/scripts/themeHandler.js"></script>
@@ -48,558 +66,1035 @@
     <script src="./src/scripts/main.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VV7XJ7CY9G"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VV7XJ7CY9G"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-VV7XJ7CY9G');
+      gtag("config", "G-VV7XJ7CY9G");
     </script>
-</head>
+  </head>
 
-
-<body onload="onLoad()" class="lightTheme">
-
+  <body onload="onLoad()" class="lightTheme">
     <!-- loader -->
     <div id="loader" class="loader">
-        <div class="loader-inner">
-            <div class="loader-circle"></div>
-        </div>
+      <div class="loader-inner">
+        <div class="loader-circle"></div>
+      </div>
     </div>
     <!-- end loader -->
 
+    <!-- scroll arrow section -->
+    <section id="scroll">
+      <div
+        class="scroll-container d-flex align-items-end justify-content-center"
+      >
+        <div class="scroll-chevron"></div>
+        <div class="scroll-chevron"></div>
+        <div class="scroll-chevron"></div>
+      </div>
+    </section>
+
     <!-- navigation section -->
     <nav id="navbar" class="py-2">
-        <div class="container">
-            <div class="row">
-                <div class="d-flex text-center col mx-lg-4" style="height: 100% !important;">
-                    <!-- bulb -->
-                    <i data-theme="lightTheme" onclick="onClick()" id="navbar-bulb"
-                        class=" mx-sm-2 bi bi-lightbulb-fill"></i>
-                    <!-- counters -->
-                    <p class="navbar-counters align-self-center d-sm-none d-md-block" data-navbar-counters style="margin: 0 !important;">## | ##</p>
-                </div>
-                <div class="col mx-lg-4 d-sm-none d-md-flex navbar-col-right">
-                    <a class="navbar-link" href="https://www.github.com/TrNiTu" target="_blank"><img
-                            src="./src/assets/images/nav-avatar.png"
-                            style="height: 60px; width: 60px; border-radius: 50%;" alt=""></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="d-flex text-center col mx-lg-4"
+            style="height: 100% !important"
+          >
+            <!-- bulb -->
+            <i
+              data-theme="lightTheme"
+              onclick="onClick()"
+              id="navbar-bulb"
+              class="mx-sm-2 bi bi-lightbulb-fill"
+            ></i>
+            <!-- counters -->
+            <p
+              class="navbar-counters align-self-center d-sm-none d-md-block"
+              data-navbar-counters
+              style="margin: 0 !important"
+            >
+              ## | ##
+            </p>
+          </div>
+          <div class="col mx-lg-4 d-sm-none d-md-flex navbar-col-right">
+            <a
+              class="navbar-link"
+              href="https://www.github.com/TrNiTu"
+              target="_blank"
+              ><img
+                src="./src/assets/images/nav-avatar.png"
+                style="height: 60px; width: 60px; border-radius: 50%"
+                alt=""
+            /></a>
+          </div>
         </div>
+      </div>
     </nav>
     <!-- end navigation section -->
 
     <!-- introduction section section -->
     <section id="introduction">
-        <div class="container text-center px-3 px-md-5 pb-lg-5 py-4 introduction">
-            <div class="row">
-                <div class="my-3 col d-flex inline-block text-center justify-content-center">
-                    <h4 class="introduction-name mx-2"></h4>
-                    <span id="introduction-wave" class="introduction-wave">👋</span>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <h1 class="introduction-header">Software Engineer</h1>
-                </div>
-                <div class="d-flex py-2 px-lg-5 p-sm-none justify-content-center align-items-center text-center">
-                    <p class="fs-6 introduction-pitch">Hello! I am currently seeking an entry or junior level software
-                        engineering (or similar) role! I am confident that my previous experiences paired along with my
-                        current qualifications, education, and my burning passion to learn, grow, and contribute make me
-                        a great asset for any software development team! If you’re interested in learning more about me
-                        or what I love to do, check out the rest of my portfolio page or feel free to contact me!</p>
-                </div>
-                </h1>
-            </div>
-            <!-- contact button goes here -->
-            <a href="#contact" class="introduction-btn">Get in Touch!</a>
+      <div class="container text-center px-3 px-md-5 pb-lg-5 py-4 introduction">
+        <div class="row">
+          <div
+            class="my-3 col d-flex inline-block text-center justify-content-center"
+          >
+            <h4 class="introduction-name mx-2"></h4>
+            <span id="introduction-wave" class="introduction-wave">👋</span>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <h1 class="introduction-header">Software Engineer</h1>
+          </div>
+          <div
+            class="d-flex py-2 px-lg-5 p-sm-none justify-content-center align-items-center text-center"
+          >
+            <p class="fs-6 introduction-pitch">
+              Hello! I am currently seeking an entry or junior level software
+              engineering (or similar) role! I am confident that my previous
+              experiences paired along with my current qualifications,
+              education, and my burning passion to learn, grow, and contribute
+              make me a great asset for any software development team! If you’re
+              interested in learning more about me or what I love to do, check
+              out the rest of my portfolio page or feel free to contact me!
+            </p>
+          </div>
         </div>
+        <!-- contact button goes here -->
+        <a href="#contact" class="introduction-btn">Get in Touch!</a>
+      </div>
     </section>
     <!-- end introduction section -->
 
     <!-- projects section -->
     <section id="work">
-        <div class="container">
-            <h4 class="hidden work-header text-center">My Projects</h4>
-            <div class="row align-items-center justify-content-center">
-
-                <!-- mock university website -->
-                <div class="hidden col-md-4 m-2 work-card">
-                    <img class="work-card-image" src="./src/assets/images/work-university.png" alt="">
-                    <div class="work-card-container">
-                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
-                            Mock University Website</h4>
-                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">This is a mock university website that
-                            helped
-                            me familiarize myself with UI layouts and Bootstrap.</p>
-                        <div class="work-card-brands mb-2">
-                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-bootstrap" style="color: #f0f0f0 !important"></i>
-                        </div>
-                        <div class="work-card-btns mt-3">
-                            <a href="https://trnitu.github.io/StudentNewsPage" target="_blank" class="work-btn">Demo</a>
-                            <a href="https://github.com/TrNiTu/StudentNewsPage" target="_blank"
-                                class="work-btn">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- wordle clone -->
-                <div class="hidden col-md-4 m-2 work-card">
-                    <img class="work-card-image" src="./src/assets/images/work-wclone.png" alt="">
-                    <div class="work-card-container">
-                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
-                            Wordle Game Clone</h4>
-                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">A remade version of the NY Times's
-                            infamous daily game, Wordle, using vanilla JS.</p>
-                        <div class="work-card-brands mb-2">
-                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-js" style="color: #f0f0f0 !important"></i>
-                        </div>
-                        <div class="work-card-btns mt-3">
-                            <a href="https://trnitu.github.io/wordleclone/" target="_blank" class="work-btn">Demo</a>
-                            <a href="https://github.com/TrNiTu/wordleclone" target="_blank" class="work-btn">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Lifting Session Tracker -->
-                <div class="hidden col-md-4 m-2 work-card">
-                    <img class="work-card-image" src="./src/assets/images/work-lifting.png" alt="">
-                    <div class="work-card-container">
-                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
-                            Lifting Session Tracker</h4>
-                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">Track your workouts with this application
-                            that uses Firebase API as storage (This is still a work in progress!)</p>
-                        <div class="work-card-brands mb-2">
-                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-js" style="color: #f0f0f0 !important"></i>
-                        </div>
-                        <div class="work-card-btns mt-3">
-                            <a href="https://github.com/TrNiTu/LiftingSessionTracker" target="_blank"
-                                class="work-btn">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- spotify api -->
-                <div class="hidden col-md-4 m-2 work-card">
-                    <img class="work-card-image" src="./src/assets/images/work-spotify.png" alt="">
-                    <div class="work-card-container">
-                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
-                            Spotify Playlist Generator</h4>
-                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">Generate a playlist based off of text
-                            that you input through Spotify using their API! (This is still a work in progress!)</p>
-                        <div class="work-card-brands mb-2">
-                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-js" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-spotify" style="color: #f0f0f0 !important"></i>
-                        </div>
-                        <div class="work-card-btns mt-3">
-                            <a href="https://github.com/TrNiTu/SpotifyAPI" target="_blank" class="work-btn">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- gym landing page -->
-                <div class="hidden col-md-4 m-2 work-card">
-                    <img class="work-card-image" src="./src/assets/images/work-gym.png" alt="">
-                    <div class="work-card-container">
-                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
-                            Mock Landing Page</h4>
-                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">This is a mock landing page using mostly
-                            Bootstrap for the styling and layout with a MapBox API usage.</p>
-                        <div class="work-card-brands mb-2">
-                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-bootstrap" style="color: #f0f0f0 !important"></i>
-                        </div>
-                        <div class="work-card-btns mt-3">
-                            <a href="https://github.com/TrNiTu/GymLandingPage" target="_blank" class="work-btn">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- current portfolio -->
-                <div class="hidden col-md-4 m-2 work-card">
-                    <img class="work-card-image" src="./src/assets/images/work-portfolio.png" alt="">
-                    <div class="work-card-container">
-                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
-                            2022 Portfolio Website</h4>
-                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">This website is on my GitHub, Check it
-                            out if you are curious about how I created this!</p>
-                        <div class="work-card-brands mb-2">
-                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-js" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-bootstrap" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-square-font-awesome"></i>
-                        </div>
-                        <div class="work-card-btns mt-3">
-                            <a href="https://github.com/TrNiTu/trnitu.github.io" target="_blank"
-                                class="work-btn">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- mern shopping list -->
-                <div class="hidden col-md-4 m-2 work-card">
-                    <img class="work-card-image" style="color: darkgray;" alt="">
-                    <div class="work-card-container">
-                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
-                            MERN Shopping List</h4>
-                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">Shopping list app using the MERN stack:
-                            MongoDB, ExpressJS, React, and NodeJS (This is still a work in progress!)</p>
-                        <div class="work-card-brands mb-2">
-                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-js" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-react"></i>
-                        </div>
-                        <div class="work-card-btns mt-3">
-                            <a href="https://github.com/TrNiTu/memoryapp" target="_blank" class="work-btn">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- memory app -->
-                <div class="hidden col-md-4 m-2 work-card">
-                    <img class="work-card-image" style="color: darkgray;" alt="">
-                    <div class="work-card-container">
-                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
-                            Bible Memory App</h4>
-                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">This app is a Bible memory app using the
-                            FRN stack (Firebase, React, and NodeJS, this project is still a work in progress!)</p>
-                        <div class="work-card-brands mb-2">
-                            <i class="fa-brands fa-html5" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-css3-alt" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-js" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-bootstrap" style="color: #f0f0f0 !important"></i>
-                            <i class="fa-brands fa-react"></i>
-                        </div>
-                        <div class="work-card-btns mt-3">
-                            <a href="https://github.com/TrNiTu/memoryapp" target="_blank" class="work-btn">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ruby on rails application -->
-                <div class="hidden col-md-4 m-2 work-card">
-                    <img class="work-card-image" style="color: darkgray;" alt="">
-                    <div class="work-card-container">
-                        <h4 class="my-2 work-card-title" style="filter: brightness(100%) !important; color: #f0f0f0;">
-                            Food Logger</h4>
-                        <p class="my-2 work-card-desc" style="color: #f0f0f0;">This application allows you to track your
-                            daily macronutrients intake. This is a Ruby on Rails Full-Stack website
-                            application. (This project is still a work in progress!)</p>
-                        <div class="work-card-brands mb-2">
-                            <i class="fa-solid fa-train-track"></i>
-                        </div>
-                        <div class="work-card-btns mt-3">
-                            <a href="https://github.com/TrNiTu/foodlog" target="_blank" class="work-btn">Code</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h4 class="hidden work-header text-center">My Projects</h4>
+        <div class="row align-items-center justify-content-center">
+          <!-- mock university website -->
+          <div class="hidden col-md-4 m-2 work-card">
+            <img
+              class="work-card-image"
+              src="./src/assets/images/work-university.png"
+              alt=""
+            />
+            <div class="work-card-container">
+              <h4
+                class="my-2 work-card-title"
+                style="filter: brightness(100%) !important; color: #f0f0f0"
+              >
+                Mock University Website
+              </h4>
+              <p class="my-2 work-card-desc" style="color: #f0f0f0">
+                This is a mock university website that helped me familiarize
+                myself with UI layouts and Bootstrap.
+              </p>
+              <div class="work-card-brands mb-2">
+                <i
+                  class="fa-brands fa-html5"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-css3-alt"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-bootstrap"
+                  style="color: #f0f0f0 !important"
+                ></i>
+              </div>
+              <div class="work-card-btns mt-3">
+                <a
+                  href="https://trnitu.github.io/StudentNewsPage"
+                  target="_blank"
+                  class="work-btn"
+                  >Demo</a
+                >
+                <a
+                  href="https://github.com/TrNiTu/StudentNewsPage"
+                  target="_blank"
+                  class="work-btn"
+                  >Code</a
+                >
+              </div>
             </div>
+          </div>
+
+          <!-- wordle clone -->
+          <div class="hidden col-md-4 m-2 work-card">
+            <img
+              class="work-card-image"
+              src="./src/assets/images/work-wclone.png"
+              alt=""
+            />
+            <div class="work-card-container">
+              <h4
+                class="my-2 work-card-title"
+                style="filter: brightness(100%) !important; color: #f0f0f0"
+              >
+                Wordle Game Clone
+              </h4>
+              <p class="my-2 work-card-desc" style="color: #f0f0f0">
+                A remade version of the NY Times's infamous daily game, Wordle,
+                using vanilla JS.
+              </p>
+              <div class="work-card-brands mb-2">
+                <i
+                  class="fa-brands fa-html5"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-css3-alt"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-js"
+                  style="color: #f0f0f0 !important"
+                ></i>
+              </div>
+              <div class="work-card-btns mt-3">
+                <a
+                  href="https://trnitu.github.io/wordleclone/"
+                  target="_blank"
+                  class="work-btn"
+                  >Demo</a
+                >
+                <a
+                  href="https://github.com/TrNiTu/wordleclone"
+                  target="_blank"
+                  class="work-btn"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Lifting Session Tracker -->
+          <div class="hidden col-md-4 m-2 work-card">
+            <img
+              class="work-card-image"
+              src="./src/assets/images/work-lifting.png"
+              alt=""
+            />
+            <div class="work-card-container">
+              <h4
+                class="my-2 work-card-title"
+                style="filter: brightness(100%) !important; color: #f0f0f0"
+              >
+                Lifting Session Tracker
+              </h4>
+              <p class="my-2 work-card-desc" style="color: #f0f0f0">
+                Track your workouts with this application that uses Firebase API
+                as storage (This is still a work in progress!)
+              </p>
+              <div class="work-card-brands mb-2">
+                <i
+                  class="fa-brands fa-html5"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-css3-alt"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-js"
+                  style="color: #f0f0f0 !important"
+                ></i>
+              </div>
+              <div class="work-card-btns mt-3">
+                <a
+                  href="https://github.com/TrNiTu/LiftingSessionTracker"
+                  target="_blank"
+                  class="work-btn"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- spotify api -->
+          <div class="hidden col-md-4 m-2 work-card">
+            <img
+              class="work-card-image"
+              src="./src/assets/images/work-spotify.png"
+              alt=""
+            />
+            <div class="work-card-container">
+              <h4
+                class="my-2 work-card-title"
+                style="filter: brightness(100%) !important; color: #f0f0f0"
+              >
+                Spotify Playlist Generator
+              </h4>
+              <p class="my-2 work-card-desc" style="color: #f0f0f0">
+                Generate a playlist based off of text that you input through
+                Spotify using their API! (This is still a work in progress!)
+              </p>
+              <div class="work-card-brands mb-2">
+                <i
+                  class="fa-brands fa-html5"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-css3-alt"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-js"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-spotify"
+                  style="color: #f0f0f0 !important"
+                ></i>
+              </div>
+              <div class="work-card-btns mt-3">
+                <a
+                  href="https://github.com/TrNiTu/SpotifyAPI"
+                  target="_blank"
+                  class="work-btn"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- gym landing page -->
+          <div class="hidden col-md-4 m-2 work-card">
+            <img
+              class="work-card-image"
+              src="./src/assets/images/work-gym.png"
+              alt=""
+            />
+            <div class="work-card-container">
+              <h4
+                class="my-2 work-card-title"
+                style="filter: brightness(100%) !important; color: #f0f0f0"
+              >
+                Mock Landing Page
+              </h4>
+              <p class="my-2 work-card-desc" style="color: #f0f0f0">
+                This is a mock landing page using mostly Bootstrap for the
+                styling and layout with a MapBox API usage.
+              </p>
+              <div class="work-card-brands mb-2">
+                <i
+                  class="fa-brands fa-html5"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-css3-alt"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-bootstrap"
+                  style="color: #f0f0f0 !important"
+                ></i>
+              </div>
+              <div class="work-card-btns mt-3">
+                <a
+                  href="https://github.com/TrNiTu/GymLandingPage"
+                  target="_blank"
+                  class="work-btn"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- current portfolio -->
+          <div class="hidden col-md-4 m-2 work-card">
+            <img
+              class="work-card-image"
+              src="./src/assets/images/work-portfolio.png"
+              alt=""
+            />
+            <div class="work-card-container">
+              <h4
+                class="my-2 work-card-title"
+                style="filter: brightness(100%) !important; color: #f0f0f0"
+              >
+                2022 Portfolio Website
+              </h4>
+              <p class="my-2 work-card-desc" style="color: #f0f0f0">
+                This website is on my GitHub, Check it out if you are curious
+                about how I created this!
+              </p>
+              <div class="work-card-brands mb-2">
+                <i
+                  class="fa-brands fa-html5"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-css3-alt"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-js"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-bootstrap"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i class="fa-brands fa-square-font-awesome"></i>
+              </div>
+              <div class="work-card-btns mt-3">
+                <a
+                  href="https://github.com/TrNiTu/trnitu.github.io"
+                  target="_blank"
+                  class="work-btn"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- mern shopping list -->
+          <div class="hidden col-md-4 m-2 work-card">
+            <img class="work-card-image" style="color: darkgray" alt="" />
+            <div class="work-card-container">
+              <h4
+                class="my-2 work-card-title"
+                style="filter: brightness(100%) !important; color: #f0f0f0"
+              >
+                MERN Shopping List
+              </h4>
+              <p class="my-2 work-card-desc" style="color: #f0f0f0">
+                Shopping list app using the MERN stack: MongoDB, ExpressJS,
+                React, and NodeJS (This is still a work in progress!)
+              </p>
+              <div class="work-card-brands mb-2">
+                <i
+                  class="fa-brands fa-html5"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-css3-alt"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-js"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="work-card-btns mt-3">
+                <a
+                  href="https://github.com/TrNiTu/memoryapp"
+                  target="_blank"
+                  class="work-btn"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- memory app -->
+          <div class="hidden col-md-4 m-2 work-card">
+            <img class="work-card-image" style="color: darkgray" alt="" />
+            <div class="work-card-container">
+              <h4
+                class="my-2 work-card-title"
+                style="filter: brightness(100%) !important; color: #f0f0f0"
+              >
+                Bible Memory App
+              </h4>
+              <p class="my-2 work-card-desc" style="color: #f0f0f0">
+                This app is a Bible memory app using the FRN stack (Firebase,
+                React, and NodeJS, this project is still a work in progress!)
+              </p>
+              <div class="work-card-brands mb-2">
+                <i
+                  class="fa-brands fa-html5"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-css3-alt"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-js"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i
+                  class="fa-brands fa-bootstrap"
+                  style="color: #f0f0f0 !important"
+                ></i>
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="work-card-btns mt-3">
+                <a
+                  href="https://github.com/TrNiTu/memoryapp"
+                  target="_blank"
+                  class="work-btn"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- ruby on rails application -->
+          <div class="hidden col-md-4 m-2 work-card">
+            <img class="work-card-image" style="color: darkgray" alt="" />
+            <div class="work-card-container">
+              <h4
+                class="my-2 work-card-title"
+                style="filter: brightness(100%) !important; color: #f0f0f0"
+              >
+                Food Logger
+              </h4>
+              <p class="my-2 work-card-desc" style="color: #f0f0f0">
+                This application allows you to track your daily macronutrients
+                intake. This is a Ruby on Rails Full-Stack website application.
+                (This project is still a work in progress!)
+              </p>
+              <div class="work-card-brands mb-2">
+                <i class="fa-solid fa-train-track"></i>
+              </div>
+              <div class="work-card-btns mt-3">
+                <a
+                  href="https://github.com/TrNiTu/foodlog"
+                  target="_blank"
+                  class="work-btn"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- end projects section -->
 
     <!-- experience section -->
     <section id="experience" class="section">
-        <div class="container">
-            <h4 class="hidden experience-header text-center">My Experiences</h4>
+      <div class="container">
+        <h4 class="hidden experience-header text-center">My Experiences</h4>
 
-            <!-- GTA -->
-            <div class="hidden row justify-content-center text-center py-5">
-                <div onclick="window.open('https\:\/\/computing.unl.edu','mywindow')" class="col-xl-6 experience-card"
-                    style="background-image: url('./src/assets/images/experiences-computing.png');"></div>
-                <div class="col-xl-6 experience-caption text-xl-end text-lg-center">
-                    <h4 class="experience-caption-header">Graduate Teaching Assitant - UNL</h4>
-                    <h5><a class="experience-caption-subheader" href="https://computing.unl.edu/"
-                            target="_blank">University of Nebraska-Lincoln School of Computing
-                        </a></h5>
+        <!-- AGCO Corporation -->
+        <div class="hidden row justify-content-center text-center py-5">
+          <div
+            onclick="window.open('https\:\/\/agcocorp.com','mywindow')"
+            class="col-xl-6 experience-card"
+            style="
+              background-image: url('./src/assets/images/experiences-agco.png');
+            "
+          ></div>
+          <div class="col-xl-6 experience-caption text-xl-end text-lg-center">
+            <h4 class="experience-caption-header">Salesforce DevOps, RDP</h4>
+            <h5>
+              <a
+                class="experience-caption-subheader"
+                href="https://www.agcocorp.com/"
+                target="_blank"
+                >AGCO Corporation
+              </a>
+            </h5>
 
-                    <p class="experience-date"><i class="fa-solid fa-calendar mx-2"></i> August 2022 - Current</p>
-                    <br><br>
-                    <p class="experience-caption-desc">As an educator, my primary responsibility is to guide and inspire
-                        students towards success by teaching a variety of courses with a focus on human-computer
-                        interaction, UI/UX development, and programming languages and concepts. I am well-versed in
-                        these subjects and have the ability to impart valuable skills and knowledge to my students. I
-                        have a track record of managing multiple tasks and responsibilities, including instructional
-                        duties, personal software projects, and coursework, even under tight deadlines. Collaboration is
-                        a critical aspect of my teaching philosophy, and I have a strong ability to work effectively
-                        with colleagues and students to drive positive outcomes. This experience has honed my skills in
-                        communication, problem-solving, and teamwork, and I am excited about the opportunity to bring my
-                        expertise to a new role and make a tangible impact on the education and growth of students.
-                    </p>
-                </div>
-            </div>
-
-            <hr class="hidden experience-break">
-
-            <!-- seresl -->
-            <div class="hidden row justify-content-center text-center py-5">
-                <div onclick="window.open('https\:\/\/seresl.unl.edu/','mywindow')" class="col-xl-6 experience-card"
-                    style="background-image: url('./src/assets/images/experiences-seresl.png');"></div>
-                <div class="col-xl-6 experience-caption text-xl-end text-lg-center">
-                    <h4 class="experience-caption-header">Undergraduate Research Intern - UNL</h4>
-                    <h5><a class="experience-caption-subheader" href="https://seresl.unl.edu" target="_blank">Software
-                            Engineering Research and Empirical Studies Lab
-                        </a></h5>
-                    <p class="experience-date"><i class="fa-solid fa-calendar mx-2"></i> January 2022 - May 2022</p>
-                    <br><br>
-                    <p class="experience-caption-desc">As a sole developer for the lab, my primary responsibilities
-                        included crafting multiple websites from the ground up. My expertise in front-end development,
-                        extensive use of APIs, and proficiency in JavaScript allowed me to create high-quality websites
-                        that met project requirements and exceeded expectations. In this role, I was responsible for
-                        utilizing tools such as Google Analytics and Statistics to ensure the websites were optimized
-                        for both performance and user experience. I was driven by a team-oriented work ethic and was
-                        able to effectively manage my time to meet stringent deadlines and deliver results that
-                        satisfied both my colleagues and the end-users. This experience honed my skills in
-                        self-management, development, and design, and I was even given the opportunity to take on a
-                        leadership role as team leader for the laboratory. I am confident in my ability to bring these
-                        skills to a new role and excel in website development and delivery
-                    </p>
-                </div>
-            </div>
-
-            <hr class="hidden experience-break">
-
-            <!-- design studio -->
-            <div class="hidden row justify-content-center text-center py-5">
-                <div onclick="window.open('https\:\/\/www.dmsi.com','mywindow')" class="col-xl-6 experience-card"
-                    style="background-image: url('./src/assets/images/experiences-studio.png');"></div>
-                <div class="col-xl-6 experience-caption text-xl-end text-lg-center">
-                    <h4 class="experience-caption-header">Associate Developer - Design Studio</h4>
-                    <h5><a class="experience-caption-subheader" href="https://www.dmsi.com/" target="_blank">DMSi
-                        </a></h5>
-
-                    <p class="experience-date"><i class="fa-solid fa-calendar mx-2"></i> August 2020 - May 2021</p>
-                    <br><br>
-                    <p class="experience-caption-desc">As a full-stack developer in an Agile Scrum work environment, I
-                        played
-                        a key role in the successful development of a cutting-edge mobile application for warehouse
-                        management that incorporated AR technology. My responsibilities included utilizing technologies
-                        such as TypeScript, JavaScript, React Native, React-Redux, GraphQL, CSS Flex-Box, Git, and
-                        numerous other
-                        industry-standard tools to drive the development process. Working closely with the UI/UX
-                        engineer, I was instrumental in ensuring top-notch design and regularly engaged with company
-                        partners to gather customer feedback and implement improvements. Despite working under tight
-                        deadlines and high pressure, I was able to deliver high-quality code and demonstrate my ability
-                        to excel in challenging circumstances. This experience has sharpened my skills in full-stack
-                        development and project management.
-                    </p>
-                </div>
-            </div>
-
+            <p class="experience-date">
+              <i class="fa-solid fa-calendar mx-2"></i> May 2023 - Current
+            </p>
+            <br /><br />
+            <p class="experience-caption-desc">
+              This role is part of the Rotational Development Program, also
+              called the CATALYST Program, that is an 18 month long program to
+              train in three separate teams. I am tasked with joining these
+              teams for six months each while developing Salesforce solutions to
+              optimize farming strategies. During this program, I will learn to
+              become a better leader, alongside increasing my professional
+              experience in Salesforce Development.ƒ
+            </p>
+          </div>
         </div>
+
+        <hr class="hidden experience-break" />
+
+        <!-- GTA -->
+        <div class="hidden row justify-content-center text-center py-5">
+          ƒ
+          <div
+            onclick="window.open('https\:\/\/computing.unl.edu','mywindow')"
+            class="col-xl-6 experience-card"
+            style="
+              background-image: url('./src/assets/images/experiences-computing.png');
+            "
+          ></div>
+          <div class="col-xl-6 experience-caption text-xl-end text-lg-center">
+            <h4 class="experience-caption-header">
+              Graduate Teaching Assitant - UNL
+            </h4>
+            <h5>
+              <a
+                class="experience-caption-subheader"
+                href="https://computing.unl.edu/"
+                target="_blank"
+                >University of Nebraska-Lincoln School of Computing
+              </a>
+            </h5>
+
+            <p class="experience-date">
+              <i class="fa-solid fa-calendar mx-2"></i> August 2022 - May 2023
+            </p>
+            <br /><br />
+            <p class="experience-caption-desc">
+              As an educator, my primary responsibility is to guide and inspire
+              students towards success by teaching a variety of courses with a
+              focus on human-computer interaction, UI/UX development, and
+              programming languages and concepts. I am well-versed in these
+              subjects and have the ability to impart valuable skills and
+              knowledge to my students. I have a track record of managing
+              multiple tasks and responsibilities, including instructional
+              duties, personal software projects, and coursework, even under
+              tight deadlines. Collaboration is a critical aspect of my teaching
+              philosophy, and I have a strong ability to work effectively with
+              colleagues and students to drive positive outcomes. This
+              experience has honed my skills in communication, problem-solving,
+              and teamwork, and I am excited about the opportunity to bring my
+              expertise to a new role and make a tangible impact on the
+              education and growth of students.
+            </p>
+          </div>
+        </div>
+
+        <hr class="hidden experience-break" />
+
+        <!-- seresl -->
+        <div class="hidden row justify-content-center text-center py-5">
+          <div
+            onclick="window.open('https\:\/\/seresl.unl.edu/','mywindow')"
+            class="col-xl-6 experience-card"
+            style="
+              background-image: url('./src/assets/images/experiences-seresl.png');
+            "
+          ></div>
+          <div class="col-xl-6 experience-caption text-xl-end text-lg-center">
+            <h4 class="experience-caption-header">
+              Undergraduate Research Intern - UNL
+            </h4>
+            <h5>
+              <a
+                class="experience-caption-subheader"
+                href="https://seresl.unl.edu"
+                target="_blank"
+                >Software Engineering Research and Empirical Studies Lab
+              </a>
+            </h5>
+            <p class="experience-date">
+              <i class="fa-solid fa-calendar mx-2"></i> January 2022 - May 2022
+            </p>
+            <br /><br />
+            <p class="experience-caption-desc">
+              As a sole developer for the lab, my primary responsibilities
+              included crafting multiple websites from the ground up. My
+              expertise in front-end development, extensive use of APIs, and
+              proficiency in JavaScript allowed me to create high-quality
+              websites that met project requirements and exceeded expectations.
+              In this role, I was responsible for utilizing tools such as Google
+              Analytics and Statistics to ensure the websites were optimized for
+              both performance and user experience. I was driven by a
+              team-oriented work ethic and was able to effectively manage my
+              time to meet stringent deadlines and deliver results that
+              satisfied both my colleagues and the end-users. This experience
+              honed my skills in self-management, development, and design, and I
+              was even given the opportunity to take on a leadership role as
+              team leader for the laboratory. I am confident in my ability to
+              bring these skills to a new role and excel in website development
+              and delivery
+            </p>
+          </div>
+        </div>
+
+        <hr class="hidden experience-break" />
+
+        <!-- design studio -->
+        <div class="hidden row justify-content-center text-center py-5">
+          <div
+            onclick="window.open('https\:\/\/www.dmsi.com','mywindow')"
+            class="col-xl-6 experience-card"
+            style="
+              background-image: url('./src/assets/images/experiences-studio.png');
+            "
+          ></div>
+          <div class="col-xl-6 experience-caption text-xl-end text-lg-center">
+            <h4 class="experience-caption-header">
+              Associate Developer - Design Studio
+            </h4>
+            <h5>
+              <a
+                class="experience-caption-subheader"
+                href="https://www.dmsi.com/"
+                target="_blank"
+                >DMSi
+              </a>
+            </h5>
+
+            <p class="experience-date">
+              <i class="fa-solid fa-calendar mx-2"></i> August 2020 - May 2021
+            </p>
+            <br /><br />
+            <p class="experience-caption-desc">
+              As a full-stack developer in an Agile Scrum work environment, I
+              played a key role in the successful development of a cutting-edge
+              mobile application for warehouse management that incorporated AR
+              technology. My responsibilities included utilizing technologies
+              such as TypeScript, JavaScript, React Native, React-Redux,
+              GraphQL, CSS Flex-Box, Git, and numerous other industry-standard
+              tools to drive the development process. Working closely with the
+              UI/UX engineer, I was instrumental in ensuring top-notch design
+              and regularly engaged with company partners to gather customer
+              feedback and implement improvements. Despite working under tight
+              deadlines and high pressure, I was able to deliver high-quality
+              code and demonstrate my ability to excel in challenging
+              circumstances. This experience has sharpened my skills in
+              full-stack development and project management.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end experience section -->
 
     <!-- skills section -->
     <section id="skills">
-        <div class="container justify-content-center">
-            <h4 class="hidden skills-header text-center mb-3">My Skills</h4>
-            <h5 class="hidden skills-subheader text-center my-4">Web Development</h5>
+      <div class="container justify-content-center">
+        <h4 class="hidden skills-header text-center mb-3">My Skills</h4>
+        <h5 class="hidden skills-subheader text-center my-4">
+          Web Development
+        </h5>
 
-            <!-- Web Development -->
-            <div class="row justify-content-center">
-                <div class="hidden justify-content-center mb-3 mb-md-0 col-xl-6 px-5 skills-icon-container">
-                    <!-- HTML -->
-                    <i style="color: #e34f26" class="skills-icon mx-3 fa-brands fa-html5">
-                        <p class="skills-icon-brand d-md-block d-none">HTML</p>
-                    </i>
+        <!-- Web Development -->
+        <div class="row justify-content-center">
+          <div
+            class="hidden justify-content-center mb-3 mb-md-0 col-xl-6 px-5 skills-icon-container"
+          >
+            <!-- HTML -->
+            <i
+              style="color: #e34f26"
+              class="skills-icon mx-3 fa-brands fa-html5"
+            >
+              <p class="skills-icon-brand d-md-block d-none">HTML</p>
+            </i>
 
-                    <!-- CSS -->
-                    <i style="color: #264de4" class="skills-icon mx-3 fa-brands fa-css3-alt">
-                        <p class="skills-icon-brand d-md-block d-none">CSS</p>
-                    </i>
+            <!-- CSS -->
+            <i
+              style="color: #264de4"
+              class="skills-icon mx-3 fa-brands fa-css3-alt"
+            >
+              <p class="skills-icon-brand d-md-block d-none">CSS</p>
+            </i>
 
-                    <!-- JavaScript -->
-                    <i style="color: #efdb4f" class="skills-icon mx-3 fa-brands fa-js">
-                        <p class="skills-icon-brand d-md-block d-none">JavaScript</p>
-                    </i>
+            <!-- JavaScript -->
+            <i style="color: #efdb4f" class="skills-icon mx-3 fa-brands fa-js">
+              <p class="skills-icon-brand d-md-block d-none">JavaScript</p>
+            </i>
 
-                    <!-- React -->
-                    <i style="color: #60dafb" class="skills-icon mx-3 fa-brands fa-react">
-                        <p class="skills-icon-brand d-md-block d-none">React</p>
-                    </i>
+            <!-- React -->
+            <i
+              style="color: #60dafb"
+              class="skills-icon mx-3 fa-brands fa-react"
+            >
+              <p class="skills-icon-brand d-md-block d-none">React</p>
+            </i>
 
-                    <!-- Bootstrap -->
-                    <i style="color: #4c05b5" class="skills-icon mx-3 fa-brands fa-bootstrap">
-                        <p class="skills-icon-brand d-md-block d-none">Bootstrap</p>
-                    </i>
+            <!-- Bootstrap -->
+            <i
+              style="color: #4c05b5"
+              class="skills-icon mx-3 fa-brands fa-bootstrap"
+            >
+              <p class="skills-icon-brand d-md-block d-none">Bootstrap</p>
+            </i>
 
-                    <!-- NodeJS -->
-                    <i style="color: #83cd29" class="skills-icon mx-3 fa-brands fa-node-js">
-                        <p class="skills-icon-brand d-md-block d-none">NodeJS</p>
-                    </i>
+            <!-- NodeJS -->
+            <i
+              style="color: #83cd29"
+              class="skills-icon mx-3 fa-brands fa-node-js"
+            >
+              <p class="skills-icon-brand d-md-block d-none">NodeJS</p>
+            </i>
+          </div>
+          <div
+            class="hidden col-xl-6 px-5 text-xl-end text-center skills-desc-container"
+          >
+            <!-- also mention typescript, php -->
+            <p class="skills-desc">
+              As an aspiring full-stack web developer, I am to be not only
+              familiar with the common tools and languages that the modern tech
+              industry uses, but also highly proficient and skilled at them. The
+              ones listed here are the tools and languages that I have most
+              experience with and am comfortable using.
+            </p>
+          </div>
+          <hr class="d-lg-block d-none hidden skills-break mb-5" />
+        </div>
 
-                </div>
-                <div class="hidden col-xl-6 px-5 text-xl-end text-center skills-desc-container">
-                    <!-- also mention typescript, php -->
-                    <p class="skills-desc">
-                        As an aspiring full-stack web developer, I am to be not only familiar with the common tools and
-                        languages that the modern tech industry uses, but also highly proficient and skilled at them.
-                        The ones listed here are the tools and languages that I have most experience with and am
-                        comfortable using.</p>
-                </div>
-                <hr class="d-lg-block d-none hidden skills-break mb-5">
+        <!-- Other Langauges and Tools -->
+        <h5 class="d-none d-lg-block hidden skills-subheader text-center my-4">
+          Other Languages and Tools
+        </h5>
+
+        <p
+          class="d-lg-block d-none hidden text-center justify-content-center skills-desc"
+        >
+          Below I have listed other tools and languages that I have experience
+          with. Hover each one of the items to learn more about my experience
+          with each of the languages and tools!
+        </p>
+        <div class="d-none d-lg-block row justify-content-center">
+          <div
+            style="max-width: 80vw; height: 100%"
+            class="hidden mb-3 skills-icon-container"
+          >
+            <div class="ps-sm-5 col-6">
+              <ul class="hidden skills-list text-left">
+                <!-- react native -->
+                <li>
+                  <a
+                    class="skills-list-item"
+                    onmouseover="skillsShowContent('skills-rn')"
+                    onmouseout="skillsHideContent('skills-rn')"
+                    >React Native</a
+                  >
+                </li>
+
+                <!-- typescript -->
+                <li>
+                  <a
+                    class="skills-list-item"
+                    onmouseover="skillsShowContent('skills-ts')"
+                    onmouseout="skillsHideContent('skills-ts')"
+                    >Typescript</a
+                  >
+                </li>
+
+                <!-- java -->
+                <li>
+                  <a
+                    class="skills-list-item"
+                    onmouseover="skillsShowContent('skills-java')"
+                    onmouseout="skillsHideContent('skills-java')"
+                    >Java</a
+                  >
+                </li>
+
+                <!-- github -->
+                <li>
+                  <a
+                    class="skills-list-item"
+                    onmouseover="skillsShowContent('skills-ghub')"
+                    onmouseout="skillsHideContent('skills-ghub')"
+                    >GitHub</a
+                  >
+                </li>
+
+                <!-- adobe suite -->
+                <li>
+                  <a
+                    class="skills-list-item"
+                    onmouseover="skillsShowContent('skills-adobe')"
+                    onmouseout="skillsHideContent('skills-adobe')"
+                    >Adobe Suite</a
+                  >
+                </li>
+              </ul>
             </div>
 
-            <!-- Other Langauges and Tools -->
-            <h5 class="d-none d-lg-block hidden skills-subheader text-center my-4">Other Languages and Tools</h5>
+            <div
+              class="d-none d-lg-block col-6 text-end pe-sm-5 d-md-flex d-none"
+            >
+              <!-- react native description -->
+              <p id="skills-rn" class="skills-hide skills-content">
+                I have a year experience with this language which includes
+                full-stack development. I used typescript based React Native for
+                a warehouse storage and management mobile application to improve
+                user experience and produce quality code.
+              </p>
 
-            <p class="d-lg-block d-none hidden text-center justify-content-center skills-desc">Below I have listed other
-                tools and
-                languages that I have
-                experience with. Hover each one of the items to learn more about my experience with each of the
-                languages and tools!</p>
-            <div class="d-none d-lg-block row justify-content-center">
-                <div style="max-width: 80vw; height: 100%;" class="hidden mb-3 skills-icon-container">
-                    <div class="ps-sm-5 col-6">
-                        <ul class="hidden skills-list text-left">
-                            <!-- react native -->
-                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-rn')"
-                                    onmouseout="skillsHideContent('skills-rn')">React Native</a></li>
+              <!-- typescript description -->
+              <p id="skills-ts" class="skills-hide skills-content">
+                Similar to React Native, I have about a year experience under my
+                belt with this language, because I used this language with React
+                Native during my time in design studio.
+              </p>
 
-                            <!-- typescript -->
-                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-ts')"
-                                    onmouseout="skillsHideContent('skills-ts')">Typescript</a></li>
+              <!-- java description -->
+              <p id="skills-java" class="skills-hide skills-content">
+                This language is the core language I have used throughout my
+                courses in my undergraduate studies at UNL, meaning that I have
+                about a couple years of experience with this language.
+              </p>
 
-                            <!-- java -->
-                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-java')"
-                                    onmouseout="skillsHideContent('skills-java')">Java</a></li>
+              <!-- github description -->
+              <p id="skills-ghub" class="skills-hide skills-content">
+                Github has been a core tool that I have used throughout my
+                studies at UNL and work experiences. I have around 2-3 years
+                experience with this tool.
+              </p>
 
-                            <!-- github -->
-                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-ghub')"
-                                    onmouseout="skillsHideContent('skills-ghub')">GitHub</a></li>
+              <!-- adobe suite description -->
+              <p id="skills-adobe" class="skills-hide skills-content">
+                One of my favorite pastimes is working on small art projects,
+                whether it be on After Effects, Photoshop, or Premiere Pro. This
+                also includes a bit of experience of Adobe XD for wireframe
+                purposes.
+              </p>
+            </div>
+            <!-- skill descriptions -->
+          </div>
+          <!-- end other skills w/ desc. section -->
 
-                            <!-- adobe suite -->
-                            <li><a class="skills-list-item" onmouseover="skillsShowContent('skills-adobe')"
-                                    onmouseout="skillsHideContent('skills-adobe')">Adobe Suite</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="d-none d-lg-block col-6 text-end pe-sm-5 d-md-flex d-none">
-                        <!-- react native description -->
-                        <p id="skills-rn" class="skills-hide skills-content">I have a year experience with this language
-                            which includes full-stack development. I used typescript based React Native for a warehouse
-                            storage and management mobile application to improve user experience and produce quality
-                            code.</p>
-
-                        <!-- typescript description -->
-                        <p id="skills-ts" class="skills-hide skills-content">Similar to React Native, I have about a
-                            year experience under my belt with this language, because I used this language with React
-                            Native during my time in design studio.</p>
-
-                        <!-- java description -->
-                        <p id="skills-java" class="skills-hide skills-content">This language is the core language I have
-                            used throughout my courses in my undergraduate studies at UNL, meaning that I have about a
-                            couple years of experience with this language.</p>
-
-                        <!-- github description -->
-                        <p id="skills-ghub" class="skills-hide skills-content">Github has been a core tool that I have
-                            used throughout my studies at UNL and work experiences. I have around 2-3 years experience
-                            with this tool.</p>
-
-                        <!-- adobe suite description -->
-                        <p id="skills-adobe" class="skills-hide skills-content">One of my favorite pastimes is working
-                            on small art projects, whether it be on After Effects, Photoshop, or Premiere Pro. This also
-                            includes a bit of experience of Adobe XD for wireframe purposes.</p>
-
-                    </div> <!-- skill descriptions -->
-                </div> <!-- end other skills w/ desc. section -->
-
-                <hr class="hidden skills-break mb-5">
-            </div> <!-- end row-->
-        </div> <!-- container -->
+          <hr class="hidden skills-break mb-5" />
+        </div>
+        <!-- end row-->
+      </div>
+      <!-- container -->
     </section>
 
     <!-- social media section -->
     <section id="contact">
-        <div class="container py-5">
-            <h4 class="hidden contact-header text-center">My Contact and Resume</h4>
+      <div class="container py-5">
+        <h4 class="hidden contact-header text-center">My Contact and Resume</h4>
 
-            <!-- contact mail form -->
+        <!-- contact mail form -->
 
-            <!-- download resume -->
-            <div class="hidden contact-container my-4">
-                <a data-bs-toggle="modal" data-bs-target="#emailFormModal" class="contact-resume-btn">Say Hello!</a>
-                <a href="./src/assets/files/treyturner-resume.docx" target="_blank" class="contact-resume-btn">Download
-                    Resume</a>
-            </div>
-
-            <div class="hidden text-center contact-container">
-                <!-- facebook -->
-                <i onclick="window.open('https\:\/\/facebook.com/trnitu','mywindow')" class="fa-brands mx-1 fa-facebook"
-                    style="color: #4267B2 !important;"></i>
-
-                <!-- github -->
-                <i onclick="window.open('https\:\/\/github.com/trnitu','mywindow')"
-                    class="fa-brands mx-1 fa-github-alt"></i>
-
-                <!-- instagram -->
-                <i onclick="window.open('https\:\/\/instagram.com/trey.nt','mywindow')"
-                    class="fa-brands mx-1 fa-instagram"></i>
-
-                <!-- linkedin -->
-                <i onclick="window.open('https\:\/\/linkedin.com/in/trnitu','mywindow')"
-                    class="fa-brands mx-1 fa-linkedin" style="color: #0A66C2 !important"></i>
-            </div>
-
+        <!-- download resume -->
+        <div class="hidden contact-container my-4">
+          <a
+            data-bs-toggle="modal"
+            data-bs-target="#emailFormModal"
+            class="contact-resume-btn"
+            >Say Hello!</a
+          >
+          <a
+            href="./src/assets/files/treyturner-resume.docx"
+            target="_blank"
+            class="contact-resume-btn"
+            >Download Resume</a
+          >
         </div>
+
+        <div class="hidden text-center contact-container">
+          <!-- facebook -->
+          <i
+            onclick="window.open('https\:\/\/facebook.com/trnitu','mywindow')"
+            class="fa-brands mx-1 fa-facebook"
+            style="color: #4267b2 !important"
+          ></i>
+
+          <!-- github -->
+          <i
+            onclick="window.open('https\:\/\/github.com/trnitu','mywindow')"
+            class="fa-brands mx-1 fa-github-alt"
+          ></i>
+
+          <!-- instagram -->
+          <i
+            onclick="window.open('https\:\/\/instagram.com/trey.nt','mywindow')"
+            class="fa-brands mx-1 fa-instagram"
+          ></i>
+
+          <!-- linkedin -->
+          <i
+            onclick="window.open('https\:\/\/linkedin.com/in/trnitu','mywindow')"
+            class="fa-brands mx-1 fa-linkedin"
+            style="color: #0a66c2 !important"
+          ></i>
+        </div>
+      </div>
     </section>
 
     <!-- email form modal -->
-    <div class="modal fade" id="emailFormModal" tabindex="-1" aria-labelledby="emailFormModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="email-form-title modal-title fs-5" id="emailFormModalLabel">Send a Hello!</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+    <div
+      class="modal fade"
+      id="emailFormModal"
+      tabindex="-1"
+      aria-labelledby="emailFormModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4
+              class="email-form-title modal-title fs-5"
+              id="emailFormModalLabel"
+            >
+              Send a Hello!
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-                <!-- email form starts here -->
-                <form action="https://formspree.io/f/mrgdayen" method="post" novalidate class="needs-validation">
-                    <div class="modal-body">
-                        <!-- name -->
-                        <label class="form-label" for="name">Name</label>
-                        <input required class="form-control" type="text" id="name" name="name"
-                            placeholder="Johnny Appleseed">
+          <!-- email form starts here -->
+          <form
+            action="https://formspree.io/f/mrgdayen"
+            method="post"
+            novalidate
+            class="needs-validation"
+          >
+            <div class="modal-body">
+              <!-- name -->
+              <label class="form-label" for="name">Name</label>
+              <input
+                required
+                class="form-control"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Johnny Appleseed"
+              />
 
-                        <!-- email -->
-                        <label class="form-label" for="email">Email</label>
-                        <input required class="form-control" type="email" id="email" name="email"
-                            placeholder="johnny123@appleseed.com">
+              <!-- email -->
+              <label class="form-label" for="email">Email</label>
+              <input
+                required
+                class="form-control"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="johnny123@appleseed.com"
+              />
 
-                        <!-- message -->
-                        <label class="form-label" for="message">Message</label>
-                        <textarea required class="form-control" id="message" name="message"
-                            placeholder="Hello! I am reaching out to learn more about you..."
-                            style="height:200px; resize: none;"></textarea>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <button type="submit" id="modalSubmit" class="modal-submit-btn">Submit</button>
-                    </div>
-                </form> <!-- email form ends here -->
-
+              <!-- message -->
+              <label class="form-label" for="message">Message</label>
+              <textarea
+                required
+                class="form-control"
+                id="message"
+                name="message"
+                placeholder="Hello! I am reaching out to learn more about you..."
+                style="height: 200px; resize: none"
+              ></textarea>
             </div>
+            <div class="modal-footer justify-content-center">
+              <button type="submit" id="modalSubmit" class="modal-submit-btn">
+                Submit
+              </button>
+            </div>
+          </form>
+          <!-- email form ends here -->
         </div>
+      </div>
     </div>
-</body>
+  </body>
 
-<!-- bootstrap validation script -->
-<script src="./src/scripts/bootstrapValidation.js"></script>
+  <!-- bootstrap validation script -->
+  <script src="./src/scripts/bootstrapValidation.js"></script>
 
-<!-- typing header text animation -->
-<script src="./src/scripts/headerTypeAnimation.js"></script>
+  <!-- typing header text animation -->
+  <script src="./src/scripts/headerTypeAnimation.js"></script>
 
-<!-- scroll fade animation script -->
-<script src="./src/scripts/scrollAnimations.js"></script>
-
+  <!-- scroll fade animation script -->
+  <script src="./src/scripts/scrollAnimations.js"></script>
 </html>

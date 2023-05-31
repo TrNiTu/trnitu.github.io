@@ -2,14 +2,26 @@
 const COUNTERONE = calculateDayDifference(new Date("06/24/2022"));
 const COUNTERTWO = calculateDayDifference(new Date("07/30/2022"));
 
-/* This function changes the default validation styles to bootstrap's custom validation styles*/
-
 /* This function hides the loader circle when the DOM is done loading */
 function onLoad() {
     let loader = document.getElementById("loader");
     loader.style.display = "none";
     displayCounters();
+    scrollArrow();
 }
+
+function scrollArrow() {
+    let didScroll = false;
+    window.onscroll = () => didScroll = true;
+
+    setInterval(() => {
+        if(didScroll) {
+            didScroll = false;
+            // display arrow
+        }
+    }, 5000);
+}
+
 function skillsShowContent(id) {
     document.getElementById(id).classList.remove("skills-hide");
 }
